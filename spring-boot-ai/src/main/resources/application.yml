@@ -1,0 +1,20 @@
+server:
+  port: 8080
+logging:
+  level:
+    cn.javastack.springboot.ai: DEBUG
+spring:
+  ai:
+    openai:
+      api-key: "sk-da3d5fce7cff4023951bcccb7464ab91" # 安全起见，从系统环境变量读取
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-chat
+          temperature: 0.5
+#    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:mcp-servers-config.json
+        toolcallback:
+          enabled: true
