@@ -9,17 +9,18 @@
         <version>3.3.0</version>
     </parent>
 
-    <groupId>cn.javastack</groupId>
-    <artifactId>spring-boot-best-practice</artifactId>
+    <groupId>com.bang</groupId>
+    <artifactId>Spring-AI-Code</artifactId>
     <version>1.0</version>
 
     <modules>
-        <module>spring-boot-ai</module>
+        <module>springboot-ai</module>
+        <module>springAI-HelloWorld</module>
     </modules>
 
     <packaging>pom</packaging>
-    <name>spring-boot-best-practice</name>
-    <description>Spring Boot Best Practice</description>
+    <name>SpringAI-Code</name>
+    <description>SpringAI-Code</description>
 
     <dependencies>
 
