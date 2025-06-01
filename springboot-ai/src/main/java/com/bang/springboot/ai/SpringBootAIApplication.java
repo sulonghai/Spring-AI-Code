@@ -1,4 +1,4 @@
-package cn.javastack.springboot.ai;
+package com.bang.springboot.ai;
 
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
@@ -11,13 +11,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @Slf4j
 @SpringBootApplication
-public class Application {
+public class SpringBootAIApplication {
 
     @Value("${spring.ai.openai.api-key}")
     private String apiKey;
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(SpringBootAIApplication.class, args);
     }
 
     @PostConstruct

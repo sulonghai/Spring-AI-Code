@@ -1,4 +1,4 @@
-package cn.javastack.springboot.ai.deepseek;
+package com.bang.springboot.ai.deepseek;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.GetMapping;

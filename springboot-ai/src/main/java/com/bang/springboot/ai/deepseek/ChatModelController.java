@@ -1,4 +1,4 @@
-package cn.javastack.springboot.ai.deepseek;
+package com.bang.springboot.ai.deepseek;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.model.ChatModel;
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author sulonghai
  * @date 2025/5/31
- * @note nobug
+ * @note ChatClient底层是使用ChatModel作为属性的
  */
 
 @RestController
-public class ChatModelController {
+public class  ChatModelController {
 
         @Autowired
         private ChatModel chatModel;

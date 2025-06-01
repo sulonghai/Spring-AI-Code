@@ -1,4 +1,4 @@
-package cn.javastack.springboot.ai.deepseek;
+package com.bang.springboot.ai.deepseek;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,18 +11,17 @@ import reactor.core.publisher.Flux;
 /**
  * @author sulonghai
  * @date 2025/5/31
- * @note nobug
+ * @note 实现stream流式响应
  */
 
 @RestController
-//@RequestMapping("/ChatAI")
-//@Controller
+@RequestMapping("/chatAI")
 public class ChatAIController {
 
     @Autowired
-    private ChatClient chatClient;
+    private ChatClient chatClient; //在AiConfig中注入
 
-    @GetMapping("/chatAI")
+    @GetMapping("/callBack")
     String generation(String userInput) {
         return this.chatClient.prompt()//提示词
                 .user(userInput)//用户输入信息
@@ -30,7 +29,7 @@ public class ChatAIController {
                 .content();//返回文本
     }
 
-    @GetMapping(value = "/chatAIStream",produces = "text/html;charset=UTF-8")
+    @GetMapping(value = "/streamBack",produces = "text/html;charset=UTF-8")
     Flux<String> generationOfStream(String userInput) {
         return this.chatClient.prompt()//提示词
                 .user(userInput)//用户输入信息

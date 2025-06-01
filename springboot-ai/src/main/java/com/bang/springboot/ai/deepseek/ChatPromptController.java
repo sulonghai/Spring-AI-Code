@@ -1,4 +1,4 @@
-package cn.javastack.springboot.ai.deepseek;
+package com.bang.springboot.ai.deepseek;
 
 import org.springframework.ai.chat.messages.Message;
 import org.springframework.ai.chat.messages.UserMessage;
