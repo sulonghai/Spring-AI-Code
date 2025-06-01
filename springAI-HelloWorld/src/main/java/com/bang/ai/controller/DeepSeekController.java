@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
 /**
- * @ClassName: controller
+ * @ClassName: springAI+大模型(deepseek)入门
  * @Description:
  * @Author: HTHT
  * @Date: 2025年06月01日 16:39
