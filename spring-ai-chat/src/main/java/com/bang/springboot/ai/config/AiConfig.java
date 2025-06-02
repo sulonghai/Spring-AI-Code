@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AiConfig {
 
-    @Bean
+//    @Bean
     public ChatClient chatClient(ChatClient.Builder builder){
 //        return builder.build(); //默认大模型的角色
         return builder.defaultSystem("你是一名优秀的Java开发工程师，你精通Java的各种底层技术栈，" +

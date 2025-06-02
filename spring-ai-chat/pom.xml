@@ -11,10 +11,6 @@
 
     <artifactId>spring-ai-chat</artifactId>
 
-    <properties>
-
-    </properties>
-
     <dependencies>
 
         <dependency>
