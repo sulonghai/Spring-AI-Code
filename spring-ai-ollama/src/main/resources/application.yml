@@ -7,10 +7,15 @@ spring:
   ai:
     openai:
       # deepseek-api 从官网获取
-#      api-key: "sk-xxxxxxxxxxxxxxx"
-      api-key: "sk-da3d5fce7cff4023951bcccb7464ab91"
+      api-key: "sk-xxxxxxxxxxxxxxx"
       base-url: https://api.deepseek.com
       chat:
         options:
           model: deepseek-chat
           temperature: 0.5
+#    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:mcp-servers-config.json
+        toolcallback:
+          enabled: true

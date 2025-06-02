@@ -14,8 +14,8 @@
     <version>1.0</version>
 
     <modules>
-        <module>springboot-ai</module>
-        <module>springAI-HelloWorld</module>
+        <module>spring-ai-chat</module>
+        <module>spring-ai-HelloWorld</module>
     </modules>
 
     <packaging>pom</packaging>

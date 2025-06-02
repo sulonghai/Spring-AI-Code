@@ -9,7 +9,7 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>springboot-ai</artifactId>
+    <artifactId>spring-ai-chat</artifactId>
 
     <properties>
 

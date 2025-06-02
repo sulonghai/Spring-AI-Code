@@ -1,0 +1,15 @@
+server:
+  port: 8080
+logging:
+  level:
+    cn.javastack.springboot.ai: DEBUG
+spring:
+  ai:
+    openai:
+      # deepseek-api 从官网获取
+      api-key: "sk-xxxxxxxxxxxxxxx"
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-chat
+          temperature: 0.5
