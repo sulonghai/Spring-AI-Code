@@ -7,7 +7,8 @@ spring:
   ai:
     openai:
       # deepseek-api 从官网获取
-      api-key: "sk-xxxxxxxxxxxxxxx"
+#      api-key: "sk-xxxxxxxxxxxxxxx"
+      api-key: "sk-da3d5fce7cff4023951bcccb7464ab91"
       base-url: https://api.deepseek.com
       chat:
         options:
